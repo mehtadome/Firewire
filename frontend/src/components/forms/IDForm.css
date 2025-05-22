@@ -1,0 +1,36 @@
+.id-form {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers form children horizontally */
+  gap: 10px;
+}
+
+.id-form-input {
+  width: 400px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.id-form-submit-button {
+  border: none;
+  outline: none;
+  width: fit-content;
+  margin: 0 auto; /* Force centering if not already */
+}
+
+/* The below is to force no outline or border to show when hovering */
+.id-form-submit-button:hover {
+  border: none;
+  outline: none;
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.id-form-submit-button:focus {
+  border: none;
+  outline: none;
+}
