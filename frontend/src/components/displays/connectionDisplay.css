@@ -1,0 +1,43 @@
+.loading-buffer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-box {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+  text-align: center;
+  border: 1px solid #ef9a9a;
+}
+
+.connection-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Optional: Scrollbar styling */
+.connection-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.connection-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.connection-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.connection-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
