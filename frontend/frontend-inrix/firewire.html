@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Firewire</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="./firewire.css" />
+        <link rel="stylesheet" href="./reset.css" />
+        <link href="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.css" rel="stylesheet" />
+        <script src="https://unpkg.com/maplibre-gl@3.x/dist/maplibre-gl.js"></script>
+        <script type="module" src="./firewire.js"></script>
+        <script type="module" src="./request.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="./fire.png"/>
+            <h2 id="header">Firewire</h2>
+            <button id="map-button">Resize</button>
+        </nav>
+        <div id="bar"></div>
+        <main>
+            <div class="info-display">
+                <input id="searchBar" type="text" placeholder="Search for information or ask a question">
+                <button id="searchButton">Search</button>
+                <script>
+                    document.getElementById("searchButton").addEventListener("click", function() {
+                        const searchBar = document.getElementById("searchBar");searchBar.value = "";
+                    });
+                  </script>
+                <div id="infobox"></div>
+            </div>
+            <div id="resizer"></div>
+            <div class="map-display">
+                <div id="map"> </div>
+            </div>
+        </main>
+    </body>
+</html>
